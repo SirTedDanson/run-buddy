@@ -114,6 +114,13 @@ section {
 
 .hero-form label {
     margin: 0 5px;
+    cursor: pointer;
+}
+
+#checkbox,
+#trainer-yes,
+#trainer-no {
+    cursor: pointer;
 }
 
 .hero-form button {
@@ -122,6 +129,7 @@ section {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    cursor: pointer;
 }
 /* Hero Form Style End */
 
