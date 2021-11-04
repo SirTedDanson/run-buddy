@@ -12,3 +12,5 @@ https://lernatino.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by [Matthew Dwyer]
+
+# Run Buddy Inc.
