@@ -10,6 +10,9 @@ A website that offers fitness training services.
 ## Website
 https://sirteddanson.github.io/run-buddy/
 
+## Screenshot
+https://sirteddanson.github.io/run-buddy/assets/images/hero-bg.jpg
+
 ## Contribution
 Made with ❤️ by Matthew Dwyer
 
