@@ -2,7 +2,6 @@
   --primary-color: #fce138;
   --secondary-color: #024e76;
   --tertiary-color: #39a6b2;
-
 }
 
 * {
@@ -12,12 +11,12 @@
 }
 
 body {
-  color var(--tertiary-color);
+  color: var(--tertiary-color);
   font-family: Helvetica, Arial, sans-serif;
 }
 
 
-/* Header Style Start */
+/* HEADER / NAV BAR STYLES START */
 
 header {
   padding: 20px 35px;
@@ -37,9 +36,9 @@ header {
 
 header h1{
   font-weight: bold;
+  margin: 0;
   font-size: 36px;
   color: var(--primary-color);
-  margin: 0;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -74,11 +73,11 @@ header nav ul li a:hover {
   text-shadow: none;
 }
 
-/* Header Style End */
+/* HEADER / NAVBAR STYLES END */
 
 
 
-/* Footer Style Start */
+/* FOOTER STYLES START */
 footer {
   background: var(--primary-color);
   width: 100%;
@@ -102,13 +101,17 @@ footer div {
 footer a {
   color: var(--secondary-color);
 }
-/* Footer Style End */
+/* END FOOTER STYLES */
 
-/* Hero Parent Style Start */
+/* STYLE ALL SECTION TAGS */
+section {
+  padding: 60px;
+}
+
+/* HERO STYLES START */
 .hero {
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -116,8 +119,7 @@ footer a {
   background-position: 80%;
   background-attachment: fixed;
 }
-/* Hero Parent Style End */
-/* Hero Call to Action Style Start */
+
 .hero-cta {
   width: 35%;
   text-align: right;
@@ -134,8 +136,6 @@ footer a {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Hero Form Style Start */
-
 .hero-form {
   border: 3px solid var(--secondary-color);
   background-color: rgba(252, 225, 56, 0.8);
@@ -143,8 +143,12 @@ footer a {
   color: var(--secondary-color);
   width: 40%;
   margin: 3.5%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-form button:hover {
+  background-color: var(--tertiary-color);
 }
 
 .hero-form h3 {
@@ -174,13 +178,6 @@ footer a {
 
 .hero-form label {
   margin: 0 5px;
-  cursor: pointer;
-}
-
-#checkbox,
-#trainer-yes,
-#trainer-no {
-  cursor: pointer;
 }
 
 .hero-form button {
@@ -189,12 +186,7 @@ footer a {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-  cursor: pointer;
   border-radius: 10px;
-}
-
-.hero-form button:hover {
-  background-color: var(--tertiary-color);
 }
 
 .checkbox-wrapper input, .radio-wrapper input {
@@ -212,8 +204,8 @@ footer a {
   content: "";
   height: 20px;
   width: 20px;
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid var(--secondary-color);
+  background: rgba(255, 255, 255, 0.75);  
+  border: 1px solid var(--secondary-color);  
   position: absolute;
   top: -4px;
   left: -30px;
@@ -225,8 +217,8 @@ footer a {
 
 .radio-wrapper label::after {
   content: "";
-  width: 20px;
   height: 20px;
+  width: 20px;
   border-radius: 50%;
   background: var(--secondary-color);
   position: absolute;
@@ -247,20 +239,39 @@ footer a {
   transform: rotate(-58deg);
 }
 
-.checkbox-wrapper input + label::after,
+.checkbox-wrapper input + label::after, 
 .radio-wrapper input + label::after {
   content: none;
 }
 
-.checkbox-wrapper input:checked + label::after,
+.checkbox-wrapper input:checked + label::after, 
 .radio-wrapper input:checked + label::after {
   content: "";
 }
-/* Hero Form Style End */
+/* HERO STYLES END */
 
 
+/* SECTION TITLE STYLES START */
+.section-title {
+  font-size: 48px;
+  color: var(--secondary-color);
+  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
 
-/* Intro Style Start */
+.primary-border {
+  border-color: var(--primary-color);
+}
+
+.secondary-border {
+  border-color: var(--tertiary-color);
+}
+/* SECTION TITLE STYLES END */
+
+/* WHAT WE DO STYLES */
 .intro p {
   line-height: 1.7;
   color: var(--tertiary-color);
@@ -269,9 +280,10 @@ footer a {
   margin: 0 auto;
   text-align: center;
 }
-/* Intro Style End */
+/* WHAT YOU DO STYLES END */
 
-/* What You Do Section Style Start */
+
+/* WHAT YOU DO STYLES START */
 .steps {
   background: var(--primary-color);
 }
@@ -326,9 +338,9 @@ footer a {
   color: var(--tertiary-color);
   font-size: 18px;
 }
-/* What You Do Section Style End */
+/* WHAT YOU DO STYLES END */
 
-/* Trainers Section Style Start */
+/* MEET THE TRAINERS START */
 .trainers {
   width: 100%;
   margin: 0 auto;
@@ -366,10 +378,9 @@ footer a {
 .trainer-bio p {
   font-size: 17px;
 }
+/* MEET THE TRAINERS END */
 
-
-
-/* Reach Out Section Style Start */
+/* REACH OUT STYLES START */
 .contact {
   background: var(--secondary-color);
 }
@@ -446,34 +457,20 @@ footer a {
   color: var(--primary-color);
   background: var(--tertiary-color);
 }
-/* Utility Classes Start */
+/* REACH OUT STYLES END */
 
-section {
-  padding: 60px;
+/* UTILITIES */
+.text-left {
+  text-align: left;
 }
 
-.section-title {
-  font-size: 48px;
-  color: var(--secondary-color);
-  border-bottom: 3px solid;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
-}
-
-.primary-border {
-  border-color: var(--primary-color);
-}
-
-.secondary-border {
-  border-color: var(--tertiary-color);
+.text-right {
+  text-align: right;
 }
 
 .flex-row {
   display: flex;
 }
-/* Utility Classes End */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
@@ -526,7 +523,6 @@ section {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-  
   section {
     padding: 30px 15px;
   }
@@ -553,6 +549,9 @@ section {
     flex: 100%;
   }
 
+  .trainer-bio h3, .trainer-bio h4 {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -562,7 +561,7 @@ section {
   }
 
   .section-title {
-    width: 100%;
+    width: 95%;
   }
 
   .into p {

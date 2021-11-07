@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
     <title>Run Buddy</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
-    
 <body>
-  <!-- Navigation -->        
+  <!-- navigation tags - block level element -->      
   <header>
     <h1>
-      <a href="/">
-        RUN BUDDY
-      </a>
+      <a href="/">RUN BUDDY</a>
     </h1>
     <nav>
-      <!-- Unordered List Elements -->
       <ul>
-        <!-- List Item Element -->
         <li>
-          <!-- Anchor Element -->
           <a href="#what-we-do">What We Do</a>
         </li>
         <li>
@@ -36,8 +29,9 @@
       </ul>
     </nav>
   </header>
+  <!-- end navigation -->
 
-  <!-- Hero/Jumbotron -->
+  <!-- hero/jumbotron -->
   <section class="hero">
     <div class="hero-cta">
       <h2>Start Building Habits.</h2>
@@ -47,19 +41,17 @@
         quasi animi nulla nesciunt quos numquam aut Lorem ipsum dolor sit amet consectetur 
         adipisicing elit. Esse consequuntur voluptatibus repellendus totam ullam quas natus 
         dolore ratione, similique sit quaerat assumenda asperiores ipsam sed qui aspernatur 
-        voluptatum veniam odio!
       </p>
     </div>
     <div class="hero-form">
       <h3>Get Started Today</h3>
       <p>Fill out this form and one of our trainers will schedule a consult</p>
-    <!-- Form Element -->
       <form>
-        <label for="name">Enter Full Name:</label>
+        <label for="name">Your Name</label>
         <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
-        <label for="email">Enter email address:</label>
+        <label for="email">Your Email</label>
         <input type="email" placeholder="Email Address" name="email" id="email" class="form-input" />
-        <label for="phone">Enter a telephone number:</label>
+        <label for="phone">Phone Number</label>
         <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
         <p>
           Have you worked out with a trainer before?
@@ -74,10 +66,8 @@
         </p>
         <p>
           <span class="checkbox-wrapper">
-           <label for="checkbox">
-             I acknowledge that I am at least 18 years of age.
-           </label>
-           <input type="checkbox" name="age-confirm" id="checkbox" />
+            <input type="checkbox" name="age-confirm" id="checkbox" />
+            <label for="checkbox">I acknowledge that I am at least 18 years of age.</label>
           </span>
         </p>
         <button type="submit">
